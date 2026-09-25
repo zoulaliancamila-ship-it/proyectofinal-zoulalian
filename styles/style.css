@@ -61,6 +61,11 @@ p {
   font-size: 1.1rem;
   color: #FFFDF7;
 }
+@media (min-width: 768px) {
+  .navbar-chinchulin .navbar-brand {
+    font-size: 1.3rem;
+  }
+}
 
 .navbar-chinchulin .nav-link {
   color: #FFFDF7;
@@ -89,12 +94,27 @@ p {
   transform: scale(0.95);
 }
 
+@keyframes heroEntrada {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .hero {
   margin-top: 1.5rem;
   padding: 4rem 1.5rem;
   text-align: center;
   background-color: #F5E8AA;
   border-radius: 16px;
+}
+@media (min-width: 768px) {
+  .hero {
+    padding: 5rem 2.5rem;
+  }
 }
 
 .hero-contenido {
@@ -103,6 +123,7 @@ p {
   align-items: center;
   text-align: center;
   gap: 1.25rem;
+  animation: heroEntrada 0.8s ease-out both;
 }
 .hero-contenido > * {
   margin-bottom: 0;
@@ -124,14 +145,6 @@ p {
 .hero-texto {
   max-width: 600px;
   color: #2E2A45;
-}
-
-.sitio-footer {
-  background-color: #2E2A45;
-  color: #FFFDF7;
-  padding: 1.5rem 0;
-  text-align: center;
-  font-size: 0.9rem;
 }
 
 .boton {
@@ -190,6 +203,12 @@ p {
 }
 .grilla-servicios .tarjeta-branding {
   grid-area: branding;
+}
+@media (min-width: 768px) {
+  .grilla-servicios {
+    grid-template-areas: "landing mantenimiento" "branding branding";
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media (min-width: 1024px) {
   .grilla-servicios {
@@ -328,4 +347,12 @@ p {
 .campo input:active,
 .campo textarea:active {
   border-color: #EC709A;
+}
+
+.sitio-footer {
+  background-color: #2E2A45;
+  color: #FFFDF7;
+  padding: 1.5rem 0;
+  text-align: center;
+  font-size: 0.9rem;
 }

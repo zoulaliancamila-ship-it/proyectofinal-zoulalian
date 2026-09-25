@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Servicios | Camila</title>
   <meta name="description" content="Servicios de Estudio Creativo Chinchulín: landing pages, mantenimiento de landings y branding para tu marca o emprendimiento.">
-  <meta name="keywords" content="servicios, landing pages, mantenimiento web, branding, identidad visual">
+  <meta name="keywords" content="landing pages, mantenimiento, branding, identidad visual">
   <meta name="robots" content="index, follow">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,6 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
   <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
@@ -44,17 +45,17 @@
     </section>
 
     <section class="seccion grilla-servicios">
-      <article class="tarjeta tarjeta-landing">
+      <article class="tarjeta tarjeta-landing" data-aos="fade-up" data-aos-delay="0">
         <h2 class="tarjeta-titulo">Landing pages</h2>
         <p>Diseño y desarrollo de landing pages a medida.</p>
       </article>
 
-      <article class="tarjeta tarjeta-mantenimiento">
+      <article class="tarjeta tarjeta-mantenimiento" data-aos="fade-up" data-aos-delay="100">
         <h2 class="tarjeta-titulo">Tareas de mantenimiento de landings</h2>
         <p>Actualizaciones, cambios y ajustes sobre tu landing ya existente.</p>
       </article>
 
-      <article class="tarjeta tarjeta-branding">
+      <article class="tarjeta tarjeta-branding" data-aos="fade-up" data-aos-delay="200">
         <h2 class="tarjeta-titulo">Branding</h2>
         <p>Identidad visual para tu marca, emprendimiento o empresa.</p>
       </article>
@@ -68,5 +69,9 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ once: true, duration: 600 });
+  </script>
 </body>
 </html>

@@ -11,6 +11,7 @@ $color-primario: $color-texto;
 $color-secundario: $color-soft-pink;
 $color-secundario-suave: $color-butter-yellow;
 $color-acento: $color-soft-pink;
+$color-interaccion: $color-celeste;
 
 $color-soft-pink-accesible: color.mix($color-soft-pink, $color-texto, 65%);
 $color-celeste-accesible: color.mix($color-celeste, $color-texto, 40%);
@@ -30,4 +31,5 @@ $transicion-rapida: 0.15s ease;
 $transicion-base: 0.2s ease;
 $transicion-3d: 0.35s ease;
 
+$bp-tablet: 768px;
 $bp-desktop: 1024px;

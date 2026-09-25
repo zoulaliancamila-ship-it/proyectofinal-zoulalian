@@ -15,6 +15,13 @@
   .tarjeta-mantenimiento { grid-area: mantenimiento; }
   .tarjeta-branding { grid-area: branding; }
 
+  @include respond-tablet {
+    grid-template-areas:
+      "landing mantenimiento"
+      "branding branding";
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   @include respond-desktop {
     grid-template-areas: "landing mantenimiento branding";
     grid-template-columns: repeat(3, 1fr);

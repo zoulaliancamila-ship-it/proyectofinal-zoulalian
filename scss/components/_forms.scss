@@ -27,7 +27,7 @@
 
     &:focus {
       @include focus-ring;
-      border-color: $color-celeste;
+      border-color: $color-interaccion;
     }
 
     &:active {
