@@ -64,6 +64,8 @@ sass scss/main.scss styles/style.css --style=expanded
 
 ## Evidencia por criterio de evaluación (SEO, Dominios y Servidores)
 
+Repositorio de esta entrega: https://github.com/zoulaliancamila-ship-it/proyectofinal-zoulalian
+
 Sitio en vivo: https://clase9-zoulalian.netlify.app
 
 **Texto alternativo (20%)**
